@@ -34,7 +34,7 @@ export function initialize() {
           })
         .catch(error => {
           console.log('Failed to get user/admin');
-          window.location = '/login';
+          //window.location = '/login';
         })
       }
       const sessionArgsUpdate = {};
@@ -45,7 +45,7 @@ export function initialize() {
       dispatch({type: SESSION_ARGS_UPDATE, sessionArgsUpdate});
       updateHeadersEsc({'x-auth-token':token});
     } else {
-      window.location = '/login';
+      //window.location = '/login';
     }
   };
 }
